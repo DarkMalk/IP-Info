@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>IP Info</title>
+  </head>
+  <body class="container">
+    <nav class="container">
+      <ul>
+        <li>IP INFO</li>
+      </ul>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" role="switch" id="theme-switch" />
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </label>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <form class="form">
+        <label>
+          <small>Insert Your IP Public</small>
+          <input
+            type="text"
+            required
+            placeholder="Ej: 54.85.132.205"
+            autofocus
+            id="inputForm"
+            autocomplete="off"
+          />
+        </label>
+        <button type="button" class="secondary" id="getIp">Get my IP</button>
+        <button type="submit" id="btnSubmit">Search info IP</button>
+      </form>
+    </div>
+    <pre id="info"></pre>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
