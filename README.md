@@ -1,5 +1,7 @@
 # **IP Information**
 
+**Note: Actualy not worked API Ip Geolocation and Threat Detection**
+
 Project realized from vanilla JavaScript and Vite
 
 extra:
